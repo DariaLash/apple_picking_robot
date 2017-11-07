@@ -7,16 +7,6 @@ import sys
 import cv2
 
 
-try:
-    #python 2 imports
-    import ConfigParser
-    config = ConfigParser.RawConfigParser()
-except:
-    # python 3 imports
-    import configparser
-    config = configparser.ConfigParser()
-
-config.read('conf.txt')
 
 home_dir = config.get('directories', 'home_dir')
 
