@@ -10,11 +10,11 @@
 
 1. You should clone following repositories to catkin_WS source directory:
 
-  * Tutlebot3 the main repo: `git clone https://github.com/ROBOTIS-GIT/turtlebot3.git`
-  * Tutlebot3 repo for message exchanging: `git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git`
-  * Tutlebot3 repo for simulatots: `git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git`
-  * Tutlebot3 repo for keyboard connection: `git clone https://github.com/ros-teleop/teleop_twist_keyboard.git`
-  * Tutlebot3 repo for joystick connection: `git clone https://github.com/ros-teleop/teleop_twist_joy.git`
+   * Tutlebot3 the main repo: `git clone https://github.com/ROBOTIS-GIT/turtlebot3.git`
+   * Tutlebot3 repo for message exchanging: `git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git`
+   * Tutlebot3 repo for simulatots: `git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git`
+   * Tutlebot3 repo for keyboard connection: `git clone https://github.com/ros-teleop/teleop_twist_keyboard.git`
+   * Tutlebot3 repo for joystick connection: `git clone https://github.com/ros-teleop/teleop_twist_joy.git`
 
 2. After that compile: `catkin_make`
 
