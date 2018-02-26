@@ -4,9 +4,9 @@
   <xacro:include filename="$(find turtlebot3_description)/urdf/turtlebot3_burger.gazebo.xacro"/>
 
     <!-- Mount and camera parameters -->
-  <xacro:property name="r200_cam_offset_px" value="-0.017" />
-  <xacro:property name="r200_cam_offset_py" value="0.024" />
-  <xacro:property name="r200_cam_offset_pz" value="0.005" />
+  <xacro:property name="r200_cam_offset_px" value="0.032" />
+  <xacro:property name="r200_cam_offset_py" value="0.000" />
+  <xacro:property name="r200_cam_offset_pz" value="0.171" />
 
   <link name="base_footprint"/>
 
@@ -139,7 +139,7 @@
   <joint name="scan_joint" type="fixed">
     <parent link="base_link"/>
     <child link="base_scan"/>
-    <origin xyz="-0.032 0 0.171" rpy="0 0 0"/>
+    <origin xyz="-0.032 0 0.171" rpy="${-M_PI*0.5} 0 0"/>
   </joint>
 
   <link name="base_scan">
@@ -186,17 +186,17 @@
     <visual>
       <origin xyz="0 0 0" rpy="${M_PI/2} 0 ${M_PI/2}"/>
         <geometry>
-         <mesh filename="package://turtlebot3_description/meshes/sensors/r200.dae" />
+         <mesh filename="package://turtlebot3_description/meshes/sensors/astra.dae" scale="0.001 0.001 0.001"/>
         </geometry>
+        <material name="dark"/>
     </visual>
 
     <inertial>
-      <mass value="0.564" />
+      <mass value="0.01" />
         <origin xyz="0 0 0" />
         <inertia ixx="0.003881243" ixy="0.0" ixz="0.0"
                  iyy="0.000498940" iyz="0.0"
                  izz="0.003879257" />
     </inertial>
   </link>
-
 </robot>
